@@ -95,7 +95,7 @@ int main()
     }
   }
   //iterating
-  //int testNeighborCount = checkNeighbors(board, 0, 1);
+  //int testNeighborCount = checkNeighborDirections(board, 0, 1);
   //cout << "count is " << testNeighborCount << endl;
   //time = 1;
   for (int t = 0; t < time; t++)
