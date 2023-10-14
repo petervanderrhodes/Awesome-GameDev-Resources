@@ -62,6 +62,6 @@ int main() {
     Catcher catcher;
     auto catcherMove = catcher.move(blocked, {catX, catY}, sideSize);
     blocked[(catcherMove.second + sideSize/2) * sideSize + catcherMove.first+sideSize/2] = true;
-    print(blocked, sideSize, {catX, catY}, "CATCHER");
+    print(blocked, sideSize, {catX, catY}, "CAT");
   }
 }

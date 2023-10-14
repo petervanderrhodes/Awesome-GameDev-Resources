@@ -146,7 +146,18 @@ struct Cat : public IAgent {
     //std::pair<int, int> output = path.front();
     //IF CAT:
     int turnsMoved = 1;
-    std::pair<int, int> output = path.at(path.size() - 1 - turnsMoved);
+    std::pair<int, int> output = catPos;
+    /*
+    std::cout << path.size() << std::endl;
+    for (auto & i : path)
+    {
+      std::cout << i.first << ", " << i.second << std::endl;
+    }
+    */
+    if (path.size() > 1) {
+      output = path.at(path.size() - 1 - turnsMoved);
+    }
+
     return {output.first - edge,output.second - edge};
   }
 };
